@@ -85,6 +85,30 @@ Why Authorization Code first and then token? Why not token directly?
 10.Front Channel (less secure channel) Ex. From Browser to our web server. Chances are there that someone can change the app in the browser and raises requst to the server.
 
 
+Authorization Code Flow/Grant Type:
+
+1. Authorization Grant - Uses both Front and Back Channel
+2. Implicit Flow - Only uses Front channel. Ex. React App without webserver only uses Web Browser so the token is retrieved via Front channel. Less Secure. But, this is the only way to get the token. TODO: How this case can be more secure. 
+3. Resource owner password credentials - Uses Only Back Channel - No Browser UI. Used for older applications. Not required for model app
+4. Client Credentials - Uses Only Back Channel - No Browser UI. machine to machine communication. Ex: Comms between microservices.
+
+OAuth is only created to Authorize the data to a user. i.e, if a client can access the data or not. 
+It will not authenticate i.e is the client really a client who he claims to be?
+But, Each App started using OAuth along with their own implementation for authenticating the user. 
+OAuth cannot be used for Authenticating the user.
+
+Later on, seeing the need for authentication, OpenID Connect is created - An extension to OAuth 2.0.
+Use OpenID Connect for Authenticating the user.
+- Requests ID Token(JWT token) - has user information.
+- UserInfo End point for retrieving more user Info
+
+
+
+
+
+
+
+
 
 
 
