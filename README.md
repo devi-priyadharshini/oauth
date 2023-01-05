@@ -1,6 +1,4 @@
 
-OAuthCodeInjectionAttack.md
-
 # OAuth and OpenID Connect
 
 # OAuth
