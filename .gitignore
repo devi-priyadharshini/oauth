@@ -1,0 +1,6 @@
+confidentialclient/.next
+confidentialclient/node_modules
+webserver/bin
+webserver/obj
+webserver/WeatherForecast.cs
+webserver/Controllers/WeatherForecastController.cs
