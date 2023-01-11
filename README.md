@@ -88,6 +88,8 @@ Why Authorization Code first and then token? Why not token directly?
 Authorization Code Flow/Grant Type:
 
 1. Authorization Grant - Uses both Front and Back Channel
+https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow <= without PKCE version
+
 2. Implicit Flow - Only uses Front channel. Ex. React App without webserver only uses Web Browser so the token is retrieved via Front channel. Less Secure. But, this is the only way to get the token. TODO: How this case can be more secure. 
 3. Resource owner password credentials - Uses Only Back Channel - No Browser UI. Used for older applications. Not required for model app
 4. Client Credentials - Uses Only Back Channel - No Browser UI. machine to machine communication. Ex: Comms between microservices.
