@@ -4,3 +4,5 @@ webserver/bin
 webserver/obj
 webserver/WeatherForecast.cs
 webserver/Controllers/WeatherForecastController.cs
+webserver/.vscode/launch.json
+webserver/.vscode/tasks.json
